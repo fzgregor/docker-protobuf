@@ -1,0 +1,7 @@
+echo "Generate protobuf de-/serializers\n"
+echo "For NanoPB (C):\n"
+echo "protoc --plugin=protoc-gen-nanopb=/nanopb/generator/protoc-gen-nanopb --nanopb_out=. -I /nanopb/generator/proto -I. attestation.proto\n"
+echo "For rust-protobuf:\n"
+echo "protoc --rust_out . foo.proto\n"
+
+exec bash
